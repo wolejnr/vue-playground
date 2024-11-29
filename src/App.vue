@@ -1,5 +1,5 @@
 <script setup>
-import Garage from './components/Garage.vue';
+import Garage from './components/TheGarage.vue';
 import mydata from './data/cardata.json'
 </script>
 

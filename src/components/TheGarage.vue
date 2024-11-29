@@ -14,7 +14,7 @@ const props = defineProps({
         <h1>{{ title }}</h1>
 
         <div class="content">
-            <div v-for="car in props.data" :id="car.vin">
+            <div v-for="car in props.data" :key="car.vin">
                 <p>{{ car.year }} {{ car.manufacturer }} {{ car.model }}</p>
                 <p v-if="car.safetied">Has been safetied</p>
                 <p v-else>Has not been safetied</p>
